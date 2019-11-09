@@ -3,50 +3,78 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="page1.css">
+	<script src='https://code.jquery.com/jquery-3.4.1.js'></script>
+
 </head>
 <body>
-	<header>
-		<div id="header">
-			<center >
-		<h1 id = "a" style="color:#ff7675"> Pet adoption</h1>
-		</center>
+	<nav>
 		<img src="https://icon-library.net/images/navigation-bar-icon/navigation-bar-icon-18.jpg" id="taswira">
-		
-	</div>
-	<div>
-		
-		
-	</div>
-	</header>
+		<img src="https://image.flaticon.com/icons/svg/12/12638.svg" id="taswira1">
+	</nav>
 	<div id="id1">
 		<input type="text" name="add" placeholder="add a pet " id="add">
 		<button id="search">add</button>
 		<br><br>
 		<select id="slt">
-			 <option value="cat">cat</option>
-			  <option value="dog">dog</option>	  
+			<option value="cat">cat</option>
+			<option value="dog">dog</option>	  
 		</select>
 		<button id='b2'>search</button>
 		<br>
-
 	</div>
-	<div id="info">
-		<input type="text" placeholder="enter your full name" id="info1" pattern="[azertyuiopqsdfghjklmwxcvbn ]">
-		<br><br>
-		<input type="text" placeholder="enter your email" id="info2">
-		<br><br>
-		<input type="text" placeholder="enter your phone number" id="info3">
-		<br><br>
-		<input type="text" placeholder="do you have other pets ?" id="info4">
-		<br><br>
-		<button id="yourInfo"> send request </button>
+		 <div id="details">
+		 	<span>enter your pet name:</span>
+			<input type="text" name="name" id="a1">
+			<span>enter your pet age:</span>
+			<input type="text" name="age" id="a2">
+			<span>enter your pet breed:</span>
+			<input type="text" name="breed" id="a3">
+			<span>enter your pet location:</span>
+			<input type="text" name="location" id="a4">
+			<span>enter your pet picture:</span>
+			<input type="url" name="image link" id="a5">
+			<button id="b10">add your pet to adoption</button>
+			
+			</div>
 
+	<div id="header">
+		<center>
+		<h1 id = "a" style="color:black"> Pet adoption</h1>
+		</center>
 	</div>
 
-	<div id="main"></div>
-	<div id="e"></div>
-	
-<script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+	<main>
+		<div id="main">
+
+			
+		</div>
+
+		<div id="e"></div>
+			<div id="info">
+				
+				<input type="text" placeholder="enter your full name" id="info1" required>
+				<br><br>
+
+				<input type="email" placeholder="enter your email" id="info2" required>
+				<br><br>
+
+				<input type="number" placeholder="enter your phone number" id="info3" required>
+				<br><br>
+
+				<label> Do you have another pet ?</label>
+				<select>
+					<option>yes</option>
+					<option>no</option>
+				</select>
+				<br><br>
+				<!-- <input type="submit" name="submit"> -->
+				<button id="test"> test</button>
+				<button id="yourInfo"> send request </button>
+
+			</div>
+		
+		
+	</main>
 <script src = "page2.js"></script>
 </body>
 </html>
